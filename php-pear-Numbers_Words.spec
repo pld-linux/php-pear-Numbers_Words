@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - provides methods for spelling numerals in words
 Summary(pl):	%{_pearname} - metody do s³ownego przedstawiania liczb
 Name:		php-pear-%{_pearname}
-Version:	0.3.1
+Version:	0.4
 Release:	1
-License:	PHP 3.0
+License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	591f1811a87d36f5c5234ba45809d58a
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	9747bcfadf99835e6acbd84d968467bc
 URL:		http://pear.php.net/package/%{_pearname}/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -26,10 +26,12 @@ long numbers you can call Numbers_Words::toWords() with just a string.
 
 The following languages are supported (in alphabetical order):
 - de (German)
+- ee (Estonian) by Erkki Saarniit
 - es (Spanish) by Xavier Noguer
 - en_100 (Donald Knuth system, English)
 - en_GB (Britich English)
 - en_US (American English)
+- it_IT (Italian) by Filippo Beltramini and Davide Caironi
 - pl (Polish)
 - pt_BR (Brazilian Portuguese) by Marcelo Subtil Marcal
 
@@ -44,10 +46,12 @@ Numbers_Words::toWords() dla zwyk³ego ³añcucha.
 
 Obs³ugiwane s± nastêpuj±ce jêzyki (w kolejno¶ci alfabetycznej):
 - de (niemiecki)
+- ee (estoñski) - autor Erkki Saarniit
 - es (hiszpañski) - dziêki Xavierowi Noguerowi
 - en_100 (angielski w systemie Donalda Knutha)
 - en_GB (angielski w wersji brytyjskiej)
 - en_US (angielski w wersji amerykañskiej)
+- it_IT (w³oski) - autorzy Filippo Beltramini oraz Davide Caironi
 - pl (polski)
 - pt_BR (portugalski w wersji brazylijskiej) dziêki Marcelo Subtil
   Marcalowi.
@@ -69,7 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/{Readme.txt,ChangeLog}
+%doc %{_pearname}-%{version}/{README,ChangeLog,tests}
 %dir %{php_pear_dir}/%{_class}/%{_subclass}
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}/*.php
