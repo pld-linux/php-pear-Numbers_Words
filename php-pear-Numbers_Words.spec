@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Numbers
-%define         _subclass       Words
+%define		_class		Numbers
+%define		_subclass	Words
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
