@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - provides methods for spelling numerals in words
 Summary(pl):	%{_pearname} - metody do s³ownego przedstawiania liczb
 Name:		php-pear-%{_pearname}
-Version:	0.8
+Version:	0.8.1
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	45f82be4072a774785891f15a861fff1
+# Source0-md5:	18f9755816ed65ac091fa6ba1c39d1a1
 URL:		http://pear.php.net/package/Numbers_Words/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
