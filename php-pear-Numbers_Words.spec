@@ -3,15 +3,16 @@
 %define         _subclass       Words
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_pearname} - provides methods for spelling numerals in words
 Summary(pl):	%{_pearname} - metody do s³ownego przedstawiania liczb
 Name:		php-pear-%{_pearname}
-Version:	0.4
+Version:	0.5
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	9747bcfadf99835e6acbd84d968467bc
+# Source0-md5:	9b0abde5ac9479e232ee40ca6c8b48fd
 URL:		http://pear.php.net/package/Numbers_Words/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
