@@ -26,15 +26,21 @@ between -infinity and infinity. If your system does not support such
 long numbers you can call Numbers_Words::toWords() with just a string.
 
 The following languages are supported (in alphabetical order):
+- bg (Bulgarian) by Kouber Saparev
 - de (German)
 - ee (Estonian) by Erkki Saarniit
-- es (Spanish) by Xavier Noguer
 - en_100 (Donald Knuth system, English)
 - en_GB (Britich English)
 - en_US (American English)
+- es (Spanish Castellano) by Xavier Noguer
+- es_AR (Argentinian Spanish) by Martin Marrese
+- fr (French) by Kouber Saparev
+- id (Indonesian) by Ernas M. Jamil
 - it_IT (Italian) by Filippo Beltramini and Davide Caironi
 - pl (Polish)
 - pt_BR (Brazilian Portuguese) by Marcelo Subtil Marcal
+- ru (Russian) by Andrey Demenev
+- sv (Swedish) by Robin Ericsson
 
 This class has in PEAR status: %{_status}.
 
@@ -46,16 +52,22 @@ system nie obs³uguje takich d³ugich liczb, mo¿na wywo³aæ
 Numbers_Words::toWords() dla zwyk³ego ³añcucha.
 
 Obs³ugiwane s± nastêpuj±ce jêzyki (w kolejno¶ci alfabetycznej):
+- bg (bu³garski) - autor Kouber Saparev
 - de (niemiecki)
 - ee (estoñski) - autor Erkki Saarniit
-- es (hiszpañski) - dziêki Xavierowi Noguerowi
 - en_100 (angielski w systemie Donalda Knutha)
 - en_GB (angielski w wersji brytyjskiej)
 - en_US (angielski w wersji amerykañskiej)
+- es (hiszpañski) - dziêki Xavierowi Noguerowi
+- es_AR (argentyñska odmiana hiszpañskiego) - autor Martin Marrese
+- fr (francuski) - autor Kouber Saparev
+- id (indonezyjski) - autor Ernas M. Jamil
 - it_IT (w³oski) - autorzy Filippo Beltramini oraz Davide Caironi
 - pl (polski)
 - pt_BR (portugalski w wersji brazylijskiej) dziêki Marcelo Subtil
   Marcalowi.
+- ru (rosyjski) - autor Andrey Demenev
+- sv (szwedzki) - autor Robin Ericsson
 
 Ta klasa ma w PEAR status: %{_status}.
 
