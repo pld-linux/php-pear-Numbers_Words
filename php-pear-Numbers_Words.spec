@@ -4,6 +4,7 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - provides methods for spelling numerals in words
+Summary(pl):	%{_pearname} - metody do s³ownego przedstawiania liczb
 Name:		php-pear-%{_pearname}
 Version:	0.3.1
 Release:	1
@@ -33,6 +34,25 @@ The following languages are supported (in alphabetical order):
 - pt_BR (Brazilian Portuguese) by Marcelo Subtil Marcal
 
 This class has in PEAR status: %{_status}.
+
+%description -l pl
+Przy u¿yciu klasy Numbers_Words mo¿na przekszta³caæ liczby zapisane
+cyframi arabskimi na s³owa w kilku jêzykach. Mo¿na przekszta³ciæ
+liczbê ca³kowit± od minus nieskoñczono¶ci do nieskoñczono¶ci. Je¶li
+system nie obs³uguje takich d³ugich liczb, mo¿na wywo³aæ
+Numbers_Words::toWords() dla zwyk³ego ³añcucha.
+
+Obs³ugiwane s± nastêpuj±ce jêzyki (w kolejno¶ci alfabetycznej):
+- de (niemiecki)
+- es (hiszpañski) - dziêki Xavierowi Noguerowi
+- en_100 (angielski w systemie Donalda Knutha)
+- en_GB (angielski w wersji brytyjskiej)
+- en_US (angielski w wersji amerykañskiej)
+- pl (polski)
+- pt_BR (portugalski w wersji brazylijskiej) dziêki Marcelo Subtil
+  Marcalowi.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
