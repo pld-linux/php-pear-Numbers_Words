@@ -42,7 +42,7 @@ The following languages are supported (in alphabetical order):
 - ru (Russian) by Andrey Demenev
 - sv (Swedish) by Robin Ericsson
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Przy u¿yciu klasy Numbers_Words mo¿na przekszta³caæ liczby zapisane
