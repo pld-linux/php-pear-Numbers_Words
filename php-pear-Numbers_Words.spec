@@ -7,13 +7,13 @@
 Summary:	%{_pearname} - provides methods for spelling numerals in words
 Summary(pl):	%{_pearname} - metody do s³ownego przedstawiania liczb
 Name:		php-pear-%{_pearname}
-Version:	0.14.0
-Release:	2
+Version:	0.15.0
+Release:	1
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	b98c6d882c8419ba83e4e9992e80d947
+# Source0-md5:	cd65db3d32d781b1a28a1d83b0ff1530
 URL:		http://pear.php.net/package/Numbers_Words/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -30,17 +30,24 @@ long numbers you can call Numbers_Words::toWords() with just a string.
 
 The following languages are supported (in alphabetical order):
 - bg (Bulgarian) by Kouber Saparev
-- de (German)
-- ee (Estonian) by Erkki Saarniit
+- cs (Czech) by Petr 'PePa' Pavel
+- de (German) by Piotr Klaban
+- dk (Danish) by Jesper Veggerby
 - en_100 (Donald Knuth system, English)
-- en_GB (Britich English)
-- en_US (American English)
+- en_GB (Britich English) by Piotr Klaban
+- en_US (American English) by Piotr Klaban
 - es (Spanish Castellano) by Xavier Noguer
 - es_AR (Argentinian Spanish) by Martin Marrese
+- et (Estonian) by Erkki Saarniit
 - fr (French) by Kouber Saparev
+- fr_BE (French Belgium) by Kouber Saparev and Philippe Bajoit
+- he (Hebrew) by Hadar Porat
+- hu_HU (Hungarian) by Nils Homp
 - id (Indonesian) by Ernas M. Jamil
 - it_IT (Italian) by Filippo Beltramini and Davide Caironi
-- pl (Polish)
+- lt (Lithuanian) by Laurynas Butkus
+- nl (Dutch) by WHAM van Dinter
+- pl (Polish) by Piotr Klaban
 - pt_BR (Brazilian Portuguese) by Marcelo Subtil Marcal
 - ru (Russian) by Andrey Demenev
 - sv (Swedish) by Robin Ericsson
@@ -56,18 +63,26 @@ Numbers_Words::toWords() dla zwyk³ego ³añcucha.
 
 Obs³ugiwane s± nastêpuj±ce jêzyki (w kolejno¶ci alfabetycznej):
 - bg (bu³garski) - autor Kouber Saparev
-- de (niemiecki)
-- ee (estoñski) - autor Erkki Saarniit
-- en_100 (angielski w systemie Donalda Knutha)
-- en_GB (angielski w wersji brytyjskiej)
-- en_US (angielski w wersji amerykañskiej)
+- cs (czeski) - autor Peter 'PePa' Pavel
+- de (niemiecki) - autor Piotr Klaban
+- dk (duñski) - autor Jesper Veggerby
+- en_100 (angielski w systemie Donalda Knutha) - autor Piotr Klaban
+- en_GB (angielski w wersji brytyjskiej) - autor Piotr Klaban
+- en_US (angielski w wersji amerykañskiej) - autor Piotr Klaban
 - es (hiszpañski) - dziêki Xavierowi Noguerowi
 - es_AR (argentyñska odmiana hiszpañskiego) - autor Martin Marrese
+- et (estoñski) - autor Erkki Saarniit
 - fr (francuski) - autor Kouber Saparev
+- fr_BE (francuski w odmianie belgijskiej) - autorzy Kouber Saparev
+  i Philippe Bajoit
+- he (hebrajski) - autor Hadar Porat
+- hu_HU (wêgierski) - autor Nils Homp
 - id (indonezyjski) - autor Ernas M. Jamil
 - it_IT (w³oski) - autorzy Filippo Beltramini oraz Davide Caironi
-- pl (polski)
-- pt_BR (portugalski w wersji brazylijskiej) dziêki Marcelo Subtil
+- lt (litewski) - autor Laurynas Butkus
+- nl (holenderski) - autor WHAM van Dinter
+- pl (polski) - autor Piotr Klaban
+- pt_BR (portugalski w odmianie brazylijskiej) dziêki Marcelo Subtil
   Marcalowi.
 - ru (rosyjski) - autor Andrey Demenev
 - sv (szwedzki) - autor Robin Ericsson
