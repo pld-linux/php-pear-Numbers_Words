@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - provides methods for spelling numerals in words
-Summary(pl.UTF-8):   %{_pearname} - metody do słownego przedstawiania liczb
+Summary(pl.UTF-8):	%{_pearname} - metody do słownego przedstawiania liczb
 Name:		php-pear-%{_pearname}
 Version:	0.15.0
 Release:	1
@@ -91,7 +91,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
