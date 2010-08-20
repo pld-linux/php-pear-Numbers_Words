@@ -3,13 +3,11 @@
 %define		_subclass	Words
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - provides methods for spelling numerals in words
 Summary(pl.UTF-8):	%{_pearname} - metody do słownego przedstawiania liczb
 Name:		php-pear-%{_pearname}
 Version:	0.16.2
-Release:	1
-Epoch:		0
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -19,6 +17,8 @@ BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
+Requires:	php-pear-Math_BigInteger
+Requires:	php-pear-PEAR-core >= 1:1.4.0-0.b1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -93,7 +93,7 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
 AutoReq:	no
 
@@ -118,10 +118,31 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %doc docs/%{_pearname}/*
-%dir %{php_pear_dir}/%{_class}/%{_subclass}
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}/*.php
+%dir %{php_pear_dir}/%{_class}/%{_subclass}
+%lang(bg) %{php_pear_dir}/%{_class}/%{_subclass}/lang.bg.php
+%lang(cs) %{php_pear_dir}/%{_class}/%{_subclass}/lang.cs.php
+%lang(de) %{php_pear_dir}/%{_class}/%{_subclass}/lang.de.php
+%lang(dk) %{php_pear_dir}/%{_class}/%{_subclass}/lang.dk.php
+%lang(en) %{php_pear_dir}/%{_class}/%{_subclass}/lang.en_100.php
+%lang(en) %{php_pear_dir}/%{_class}/%{_subclass}/lang.en_GB.php
+%lang(es) %{php_pear_dir}/%{_class}/%{_subclass}/lang.en_US.php
+%lang(es) %{php_pear_dir}/%{_class}/%{_subclass}/lang.es.php
+%lang(es) %{php_pear_dir}/%{_class}/%{_subclass}/lang.es_AR.php
+%lang(et) %{php_pear_dir}/%{_class}/%{_subclass}/lang.et.php
+%lang(fr) %{php_pear_dir}/%{_class}/%{_subclass}/lang.fr.php
+%lang(fr) %{php_pear_dir}/%{_class}/%{_subclass}/lang.fr_BE.php
+%lang(he) %{php_pear_dir}/%{_class}/%{_subclass}/lang.he.php
+%lang(hu) %{php_pear_dir}/%{_class}/%{_subclass}/lang.hu_HU.php
+%lang(id) %{php_pear_dir}/%{_class}/%{_subclass}/lang.id.php
+%lang(it) %{php_pear_dir}/%{_class}/%{_subclass}/lang.it_IT.php
+%lang(lt) %{php_pear_dir}/%{_class}/%{_subclass}/lang.lt.php
+%lang(nl) %{php_pear_dir}/%{_class}/%{_subclass}/lang.nl.php
+%lang(pl) %{php_pear_dir}/%{_class}/%{_subclass}/lang.pl.php
+%lang(pt_BR) %{php_pear_dir}/%{_class}/%{_subclass}/lang.pt_BR.php
+%lang(ru) %{php_pear_dir}/%{_class}/%{_subclass}/lang.ru.php
+%lang(sv) %{php_pear_dir}/%{_class}/%{_subclass}/lang.sv.php
 
 %files tests
 %defattr(644,root,root,755)
