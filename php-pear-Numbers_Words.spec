@@ -19,6 +19,7 @@ BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
 Requires:	php-pear-Math_BigInteger
 Requires:	php-pear-PEAR-core >= 1:1.4.0-0.b1
+Obsoletes:	php-pear-Numbers_Words-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -89,20 +90,6 @@ Obsługiwane są następujące języki (w kolejności alfabetycznej):
 
 Ta klasa ma w PEAR status: %{_status}.
 
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development/Languages/PHP
-Requires:	%{name} = %{version}-%{release}
-AutoProv:	no
-AutoReq:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
-
 %prep
 %pear_package_setup
 
@@ -143,7 +130,3 @@ rm -rf $RPM_BUILD_ROOT
 %lang(pt_BR) %{php_pear_dir}/%{_class}/%{_subclass}/lang.pt_BR.php
 %lang(ru) %{php_pear_dir}/%{_class}/%{_subclass}/lang.ru.php
 %lang(sv) %{php_pear_dir}/%{_class}/%{_subclass}/lang.sv.php
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/*
