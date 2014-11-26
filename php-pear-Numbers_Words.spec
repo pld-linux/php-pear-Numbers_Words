@@ -4,12 +4,12 @@
 Summary:	%{pearname} - provides methods for spelling numerals in words
 Summary(pl.UTF-8):	%{pearname} - metody do słownego przedstawiania liczb
 Name:		php-pear-%{pearname}
-Version:	0.16.4
+Version:	0.18.1
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
-# Source0-md5:	8b710a80794bc162630891a70876d906
+# Source0-md5:	6c81d312bd685d754d15b017daff593e
 URL:		http://pear.php.net/package/Numbers_Words/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -56,27 +56,43 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/Numbers/*.php
 %dir %{php_pear_dir}/Numbers/Words
-%lang(bg) %{php_pear_dir}/Numbers/Words/lang.bg.php
-%lang(cs) %{php_pear_dir}/Numbers/Words/lang.cs.php
-%lang(de) %{php_pear_dir}/Numbers/Words/lang.de.php
-%lang(dk) %{php_pear_dir}/Numbers/Words/lang.dk.php
-%lang(en) %{php_pear_dir}/Numbers/Words/lang.en_100.php
-%lang(en) %{php_pear_dir}/Numbers/Words/lang.en_GB.php
-%lang(es) %{php_pear_dir}/Numbers/Words/lang.en_US.php
-%lang(es) %{php_pear_dir}/Numbers/Words/lang.es.php
-%lang(es) %{php_pear_dir}/Numbers/Words/lang.es_AR.php
-%lang(es_MX) %{php_pear_dir}/Numbers/Words/lang.es_MX.php
-%lang(et) %{php_pear_dir}/Numbers/Words/lang.et.php
-%lang(fr) %{php_pear_dir}/Numbers/Words/lang.fr.php
-%lang(fr) %{php_pear_dir}/Numbers/Words/lang.fr_BE.php
-%lang(he) %{php_pear_dir}/Numbers/Words/lang.he.php
-%lang(hu) %{php_pear_dir}/Numbers/Words/lang.hu_HU.php
-%lang(id) %{php_pear_dir}/Numbers/Words/lang.id.php
-%lang(it) %{php_pear_dir}/Numbers/Words/lang.it_IT.php
-%lang(lt) %{php_pear_dir}/Numbers/Words/lang.lt.php
-%lang(nl) %{php_pear_dir}/Numbers/Words/lang.nl.php
-%lang(pl) %{php_pear_dir}/Numbers/Words/lang.pl.php
-%lang(pt_BR) %{php_pear_dir}/Numbers/Words/lang.pt_BR.php
-%lang(ru) %{php_pear_dir}/Numbers/Words/lang.ru.php
-%lang(sv) %{php_pear_dir}/Numbers/Words/lang.sv.php
-%lang(tr) %{php_pear_dir}/Numbers/Words/lang.tr_TR.php
+%{php_pear_dir}/Numbers/Words/Exception.php
+
+%dir %{php_pear_dir}/Numbers/Words/Locale
+%dir %{php_pear_dir}/Numbers/Words/Locale/en
+%dir %{php_pear_dir}/Numbers/Words/Locale/es
+%dir %{php_pear_dir}/Numbers/Words/Locale/fr
+%dir %{php_pear_dir}/Numbers/Words/Locale/hu
+%dir %{php_pear_dir}/Numbers/Words/Locale/it
+%dir %{php_pear_dir}/Numbers/Words/Locale/pt
+%dir %{php_pear_dir}/Numbers/Words/Locale/ro
+%dir %{php_pear_dir}/Numbers/Words/Locale/tr
+%lang(be) %{php_pear_dir}/Numbers/Words/Locale/fr/BE.php
+%lang(bg) %{php_pear_dir}/Numbers/Words/Locale/bg.php
+%lang(cs) %{php_pear_dir}/Numbers/Words/Locale/cs.php
+%lang(de) %{php_pear_dir}/Numbers/Words/Locale/de.php
+%lang(dk) %{php_pear_dir}/Numbers/Words/Locale/dk.php
+%lang(en_100) %{php_pear_dir}/Numbers/Words/Locale/en/100.php
+%lang(en_GB) %{php_pear_dir}/Numbers/Words/Locale/en/GB.php
+%lang(en_IN) %{php_pear_dir}/Numbers/Words/Locale/en/IN.php
+%lang(en_US) %{php_pear_dir}/Numbers/Words/Locale/en/US.php
+%lang(es) %{php_pear_dir}/Numbers/Words/Locale/es.php
+%lang(es) %{php_pear_dir}/Numbers/Words/Locale/es/VE.php
+%lang(es_AR) %{php_pear_dir}/Numbers/Words/Locale/es/AR.php
+%lang(es_MX) %{php_pear_dir}/Numbers/Words/Locale/es/MX.php
+%lang(et) %{php_pear_dir}/Numbers/Words/Locale/et.php
+%lang(fr) %{php_pear_dir}/Numbers/Words/Locale/fr.php
+%lang(he) %{php_pear_dir}/Numbers/Words/Locale/he.php
+%lang(hu) %{php_pear_dir}/Numbers/Words/Locale/hu/HU.php
+%lang(id) %{php_pear_dir}/Numbers/Words/Locale/id.php
+%lang(it) %{php_pear_dir}/Numbers/Words/Locale/it/IT.php
+%lang(lt) %{php_pear_dir}/Numbers/Words/Locale/lt.php
+%lang(lv) %{php_pear_dir}/Numbers/Words/Locale/lv.php
+%lang(nl) %{php_pear_dir}/Numbers/Words/Locale/nl.php
+%lang(pl) %{php_pear_dir}/Numbers/Words/Locale/pl.php
+%lang(pt_BR) %{php_pear_dir}/Numbers/Words/Locale/pt/BR.php
+%lang(ro) %{php_pear_dir}/Numbers/Words/Locale/ro/RO.php
+%lang(ru) %{php_pear_dir}/Numbers/Words/Locale/ru.php
+%lang(sv) %{php_pear_dir}/Numbers/Words/Locale/sv.php
+%lang(tr) %{php_pear_dir}/Numbers/Words/Locale/tr/TR.php
+%lang(ua) %{php_pear_dir}/Numbers/Words/Locale/ua.php
