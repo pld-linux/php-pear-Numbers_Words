@@ -1,6 +1,5 @@
 %define		status		beta
 %define		pearname	Numbers_Words
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - provides methods for spelling numerals in words
 Summary(pl.UTF-8):	%{pearname} - metody do słownego przedstawiania liczb
 Name:		php-pear-%{pearname}
