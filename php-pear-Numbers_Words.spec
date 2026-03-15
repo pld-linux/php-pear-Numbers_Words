@@ -4,7 +4,7 @@ Summary:	%{pearname} - provides methods for spelling numerals in words
 Summary(pl.UTF-8):	%{pearname} - metody do słownego przedstawiania liczb
 Name:		php-pear-%{pearname}
 Version:	0.18.2
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
