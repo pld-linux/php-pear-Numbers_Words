@@ -1,0 +1,36 @@
+Replace deprecated curly-brace string offset (removed in PHP 8.0) and
+each() function (removed in PHP 8.0).
+
+--- Numbers_Words-0.18.2.org/Numbers/Words/Locale/ru.php	2020-09-01 00:00:00.000000000 +0200
++++ Numbers_Words-0.18.2/Numbers/Words/Locale/ru.php	2026-05-04 00:00:00.000000000 +0200
+@@ -570,7 +570,7 @@
+         } else {
+             $num = str_pad($num, 3, '0', STR_PAD_LEFT);
+
+-            $hundreds = (int)$num{0};
++            $hundreds = (int)$num[0];
+             if ($hundreds) {
+                 $ret = $this->_hundreds[$hundreds];
+                 if (substr($num, 1) != '00') {
+@@ -580,8 +580,8 @@
+                 $case = 3;
+             }
+
+-            $tens = (int)$num{1};
+-            $ones = (int)$num{2};
++            $tens = (int)$num[1];
++            $ones = (int)$num[2];
+             if ($tens || $ones) {
+                 if ($tens == 1 && $ones == 0) {
+                     $ret .= 'десять';
+--- Numbers_Words-0.18.2.org/Numbers/Words/Locale/pt/BR.php	2020-09-01 00:00:00.000000000 +0200
++++ Numbers_Words-0.18.2/Numbers/Words/Locale/pt/BR.php	2026-05-04 00:00:00.000000000 +0200
+@@ -384,7 +384,7 @@
+          */
+         reset($chunks);
+         do {
+-            list(,$chunk) = each($chunks);
++            $chunk = current($chunks); next($chunks);
+         } while ($chunk === '000');
+
+         if (($chunk < 100) || !($chunk % 100)) {
